@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="тесты"
+        android:id="@+id/test"
+        android:icon="@drawable/ic_testss" />
+    <item android:title="настройки"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settingg"/>
+    <item android:title="профиль"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profileee"/>
+</menu>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="welcome_text">Добро пожаловать</string>
+    <string name="please_enter_your_nickname">Введите никнейм</string>
+    <string name="nickname">nickname</string>
+    <string name="image_info">image</string>
+    <string name="btn_start">Старт</string>
+    <string name="btn_submit">Отправить</string>
+    <string name="username">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter_test">Введите Логин и Пароль, чтобы зайти на тест</string>
+    <string name="btn_login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigationfragment">Navigationfragment</string>
+    <string name="title_tests">Test</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_Profile">Profile</string>
+    <string name="title_activity_navi">NaviActivity</string>
+</resources>
