@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity()  {
         val fragment2: Fragment = SettingFragment()
         val fragment3: Fragment = ProfileFragment()
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.navbar)
-        val bundle = Bundle()
+
 
         if (intent.extras != null) {
             val bundle = intent.extras

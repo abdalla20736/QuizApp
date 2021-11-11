@@ -5,9 +5,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 
- class MysqlCon  {
+class MysqlCon  {
     private  var  con: Connection? = null
 
     fun init() {
@@ -15,7 +17,7 @@ import java.sql.Statement;
             val str =  "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11449163";
             Class.forName("com.mysql.jdbc.Driver")
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
-            StrictMode.setThreadPolicy(policy)
+              StrictMode.setThreadPolicy(policy)
              con = DriverManager.getConnection(
                 str, "sql11449163", "1ANq8zHZHY")
             println("all right,connected")
@@ -27,13 +29,16 @@ import java.sql.Statement;
       fun login(username :String,password:String) :String{
          val stmt:Statement = con!!.createStatement()
          val rs : ResultSet = stmt.executeQuery("SELECT * FROM Users Where username = '$username' and `password` = '$password'")
-          var data =""
+
+          var data = ""
 
           if(rs.next() == false){
               return  data
           }else{
+
               println(rs.getInt(1).toString() + " " + rs.getString(2)+ " " + rs.getString(3)+ " " + rs.getString(4))
-              data = rs.getString(2)
+             if(rs.getString(4).equals(password))
+                 data = rs.getString(2)
               return data
 
           }
